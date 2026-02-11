@@ -55,7 +55,10 @@
 a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
 
 .subtext1{
-    display: inline-block; 
+    position: absolute;
+    bottom:30px;
+    left:50px;
+    right: 50px;
     text-align: left;
     color: aliceblue;
     margin-bottom: 30px;
@@ -79,5 +82,6 @@ a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
 
 @media(max-width: 640px){
     .main-background{ min-height: 700px;}
-    #reviews .review{margin: 30px}
+    #reviews .review:last-child{margin-right: 30px}
+
 }
