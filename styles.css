@@ -76,3 +76,8 @@ a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
 }
 
 #reviews .review:last-child{margin-right: 0}
+
+@media(max-width: 640){}
+    .main-background{
+        min-height: 700px; 
+    }
