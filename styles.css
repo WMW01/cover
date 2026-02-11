@@ -55,7 +55,7 @@
 a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
 
 .subtext1{
-    position: absolute;
+    display: inline-block; 
     text-align: left;
     bottom: 30px;
     left: 50px;
@@ -64,7 +64,7 @@ a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
     margin-bottom: 30px;
 }
 
-#reviews{text-align: center;}
+#reviews{text-align: center; padding-top: 60px}
 
 #reviews .review{
     vertical-align: top;
