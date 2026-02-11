@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hearthside Players Official Website">
+    <meta name="keywords" content="wedding band, cover band">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display:flex;
+            margin-bottom: 10px;
+        }
+
+        .container label{
+            width: 100px;
+            text-align:right;
+            padding-right: 30px; 
+        }
+
+        .contact-info{
+            border: solid rgb(136, 218, 234);
+            padding: 30px 0;
+            background-color: rgb(204, 234, 234);
+
+        }
+    </style>
+</head>
+<body>
+    <header class = "header">
+        <div><img src="images/logo1.jpg" alt="Hearthside Players Logo" id="logo"></div>
+        <div id="nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="performances.html">Past Performances</a></li>
+                <li><a href="liveshow.html">See us Alive</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <h3>contact information</h3>
+    <form method="get" action="#">
+        <div class="contact-info">
+            <div class="container">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="container">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            </div>
+            <div class="container">
+            <label for="email">Email address:</label>
+            <input type="text" id="email" name="email"><br>
+            </div>
+            <div class="container">
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" name="phone">
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
