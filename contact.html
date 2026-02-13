@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
+
         .container{
             display:flex;
             margin-bottom: 10px;
@@ -19,10 +20,32 @@
 
         .contact-info{
             border: solid rgb(136, 218, 234);
-            padding: 30px 0;
+            padding: 10px 0;
             background-color: rgb(204, 234, 234);
-
+            max-width: 830px;
         }
+
+        .Event-Details input{
+            color: grey;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .Event-Details{
+            border: solid rgb(136, 218, 234);
+            padding: 10px 15px;
+            background-color: rgb(204, 234, 234);
+            max-width: 800px;
+        }
+
+        .Services{
+            border: solid rgb(136, 218, 234);
+            padding: 10px 15px;
+            background-color: rgb(204, 234, 234);
+            max-width: 800px;           
+        }
+
     </style>
 </head>
 <body>
@@ -38,6 +61,7 @@
             </ul>
         </div>
     </header>
+    <h2 style="max-width: 800px; padding: 30px">please fill out the forms below and our customer agents will reach you out within 24 hours</h2>
     <h3>contact information</h3>
     <form method="get" action="#">
         <div class="contact-info">
@@ -59,6 +83,29 @@
             </div>
         </div>
 
+        <h3>Event Details</h3>
+            <div class="Event-Details">
+                <input type="text" id = "Date" value = "Date"></br>
+                <input type="text" id = "Venue" value = "Venue"><br>
+                <input type="text" id ="City" value = "City"><br>
+                <input type="text" id = "State" value = "State">
+            </div>
+        
+        <h3>Services you are Interested in</h3>
+            <div class="Services">
+            <input type="checkbox" id="service1" name="service1">
+            <label for="vehicle1"> Reception Music</label><br>
+            <input type="checkbox" id="service2" name="service2">
+            <label for="vehicle2"> Ceremony Music</label><br>
+            <input type="checkbox" id="service3" name="service2">
+            <label for="vehicle3"> Cocktile Hour Music</label><br>
+            <input type="checkbox" id="service4" name="service4">
+            <label for="vehicle2"> Photography</label><br>
+            <input type="checkbox" id="service5" name="service5">
+            <label for="vehicle3"> Videography</label><br>
+            <input type="checkbox" id="service6" name="service5">
+            <label for="vehicle3"> Event Lightening</label>
+            </div>
     </form>
 </body>
 </html>
