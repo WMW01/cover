@@ -1,9 +1,9 @@
-#nav {text-align:right; padding-top: 8px; padding-bottom: 10px;}
-#nav ul {list-style-type: none;}
-#nav ul li {display: inline-block; padding: 3px 10px}
-#nav ul a {font-size: 18px; color: #000000; font-family:Verdana, Geneva, Tahoma, sans-serif;
+.nav {text-align:right; padding-top: 8px; padding-bottom: 10px;}
+.nav ul {list-style-type: none;}
+.nav ul li {display: inline-block; padding: 3px 10px}
+.nav ul a {font-size: 18px; color: #000000; font-family:Verdana, Geneva, Tahoma, sans-serif;
            text-decoration: none; padding: 4px 8px}
-#nav ul a:hover {color: #ce1b44; background-color: background-color #fff; border: solid; border-radius: 5px;}
+.nav ul a:hover {color: #ce1b44; background-color: background-color #fff; border: solid; border-radius: 5px;}
 
 
 .header {display:flex; background-color: aliceblue; justify-content: space-between;}
