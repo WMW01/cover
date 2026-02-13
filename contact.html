@@ -124,6 +124,16 @@
 
             <input style = "padding: 20px auto; margin: 10px auto" type="submit" value="Submit">
     </form>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function(){
+            var mobileNav = this.querySelector('.mobile.nav');
+            if (mobileNav.style.display == 'block'){
+                mobileNav.style.display = 'none';
+            } else {
+                mobileNav.style.display = 'block'; 
+            }
+        })
+    </script>
 </body>
 <footer>
     <p>The Party Band<br>
