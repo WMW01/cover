@@ -5,8 +5,8 @@
            text-decoration: none; padding: 4px 8px}
 .nav ul a:hover {color: #ce1b44; background-color: background-color #fff; border: solid; border-radius: 5px;}
 
-
-.header {display:flex; background-color: aliceblue; justify-content: space-between;}
+#mobile-menu{display:none}
+.header {display:flex; background-color: aliceblue; justify-content: space-between; min-height: 50px; position:relative}
 #logo{width: 120px; height: 100px}
 
 .main-background {
@@ -81,8 +81,31 @@ a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
 
 #reviews .review:last-child{margin-right: 0}
 
+
+.hamburger-icon span{
+    height: 2px;
+    width: 25px;
+    background-color:#991a1a;
+    display:block;
+    margin-bottom:3px;
+}
+.hamburger-icon{
+    margin: 10px auto;
+}
+
+
 @media(max-width: 640px){
     .main-background{ min-height: 700px;}
     #reviews .review:last-child{margin-right: 30px;}
 
+}
+
+@media(max-width: 800px){
+    #mobile-menu {display:block; position: absolute; right:30px;top:20px; z-index: 1000;}
+    .nav{display:none}
+    #mobile-menu:hover .mobile.nav{display:block}
+    .mobile.nav {position:absolute; top: 0px; right: 10px; width: 150px}
+    .mobile.nav ul {background-color:  rgb(103, 178, 224); padding: 15px 0}
+    .mobile.nav ul li{display: block; margin: 0; padding: 0 0 0 20px}
+    .mobile.nav ul li a{display: block}
 }
