@@ -98,5 +98,22 @@
             </td>        
         <tr>
     </table>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function(){
+            var mobileNav = this.querySelector('.mobile.nav');
+            if (mobileNav.style.display == 'block'){
+                mobileNav.style.display = 'none';
+            } else {
+                mobileNav.style.display = 'block'; 
+            }
+        })
+    </script>
 </body>
+<footer>
+    <p>The Party Band<br>
+        100 Main Street<br>
+        Medford MA<br>
+        hearthsideband@gmail.com<br>
+        617-555-1234</p>
+    </footer>
 </html>

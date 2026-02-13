@@ -93,6 +93,12 @@ a.button:hover{background-color: rgba(0,0,0,0); color: aliceblue:}
     margin: 10px auto;
 }
 
+footer {
+    border-top: 2px solid #ce1b44;
+    padding-top: 20px;
+    margin-top:40px; 
+}
+
 
 @media(max-width: 640px){
     .main-background{ min-height: 700px;}
