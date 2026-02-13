@@ -20,6 +20,14 @@
             padding-right:15px;
         }
 
+        @media(max-width: 800px){
+            .big-table{display:none}
+        }
+
+        @media(min-width: 800px){
+            .smalltable{display:none}
+        }
+
     </style>
 </head>
 <body>
@@ -51,7 +59,7 @@
         </div>
     </header>
     <h1 style="min-width: 400px">Meet Our Talented Musicians!</h1>
-    <table border="1" cellpadding="10px">
+    <table class="big-table" border="1" cellpadding="10px">
         <tr>
             <th></th>
             <th>Name</th>
@@ -59,7 +67,7 @@
             <th>Bio</th>
             <th>Honors</th>
         </tr>
-            <td><img src="images/profile photo.jpg" width="50px"></td>
+            <td><img src="images/profile photo.jpg" width="50px" alt="Alex's photo"></td>
             <td>Alex Rivers</td>
             <td>Lead Vocals & Guitar</td>
             <td>Alex is a charismatic frontman with a soulful voice and infectious energy. With over 12 years of live performance experience, he’s performed at thousands of weddings, corporate events, and private parties. Alex specializes in pop, rock, and classic soul, delivering performances that get every crowd on their feet.</td>
@@ -71,7 +79,7 @@
                 <ul>
             </td>
         <tr>
-            <td><img src="images/profile photo.jpg" width="50px"></td>
+            <td><img src="images/profile photo.jpg" width="50px" alt="Mia's photo"></td>
             <td>Mia Torres</td>
             <td>Keyboard & Backing Vocals</td>
             <td>Mia brings elegance and versatility to the band, effortlessly transitioning from classical piano pieces during ceremonies to upbeat pop and jazz for the reception. With a background in jazz studies from Berklee College of Music, she adds both technical skill and creative flair to every performance.</td>
@@ -85,7 +93,7 @@
         </tr>
 
         <tr>
-            <td><img src="images/profile photo.jpg" width="50px"></td>
+            <td><img src="images/profile photo.jpg" width="50px" alt="Jordan's photo"></td>
             <td>Jordan Lee</td>
             <td>Drums & Percussion</td>
             <td>Jordan’s precise rhythms and dynamic style keep the band’s energy high from the first note to the last. With extensive experience in funk, rock, and Latin rhythms, Jordan is known for his adaptability and ability to read the crowd perfectly. He’s the heartbeat of the band, making every set feel alive and spontaneous.</td>
@@ -98,6 +106,92 @@
             </td>        
         <tr>
     </table>
+
+    <div class="smalltable">
+        <table border="1", cellpadding="10px">
+            <tr>
+                <td></td>
+                <td><img src="images/profile photo.jpg" width="50px"></td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>Alex Rivers</td>
+            </tr>
+
+            <tr>
+                <td>Role</td>
+                <td>Alex is a charismatic frontman with a soulful voice and infectious energy. With over 12 years of live performance experience, he’s performed at thousands of weddings, corporate events, and private parties. Alex specializes in pop, rock, and classic soul, delivering performances that get every crowd on their feet.</td>
+            </tr>
+
+            <tr>
+                <td>Honors</td>
+                <td>
+                    <ul>
+                        <li>Featured in Wedding Music Weekly’s “Top 10 Wedding Vocalists” (2022)</li>
+                        <li>Winner of the National Acoustic Singer-Songwriter Showcase (2018)</li>
+                        <li>Lead guitarist and vocalist for the indie-pop band Neon Horizon</li>
+                    <ul>
+                </td>
+            </tr>
+        </table>
+        <table border="1", cellpadding="10px">
+                <tr>
+                    <td></td>
+                    <td><img src="images/profile photo.jpg" width="50px" alt="Mia's photo"></td>
+                </tr>
+    
+                <tr>
+                    <td>Name</td>
+                    <td>Mia Torres</td>
+                </tr>
+    
+                <tr>
+                    <td>Role</td>
+                    <td>Keyboard & Backing Vocals</td>
+                </tr>
+    
+                <tr>
+                    <td>Honors</td>
+                    <td>
+                        <ul>
+                            <li>Berklee College of Music Jazz Scholarship recipient</li>
+                            <li>Session musician on multiple top-charting albums (2019–2023)</li>
+                            <li>Featured in Keys & Chords Magazine as “Rising Star in Live Performance” (2021)</li>
+                        <ul> 
+                    </td>
+                </tr>
+        </table>
+
+        <table border="1", cellpadding="10px">
+            <tr>
+                <td></td>
+                <td><img src="images/profile photo.jpg" width="50px" alt="Jordan’s's photo"></td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>Jordan Lee</td>
+            </tr>
+
+            <tr>
+                <td>Role</td>
+                <td>Drums & Percussion</td>
+            </tr>
+
+            <tr>
+                <td>Honors</td>
+                <td>
+                    <ul>
+                        <li>Winner of the National Percussion Championship (2020)</li>
+                        <li>Touring drummer for multiple regional jazz and funk ensembles</li>
+                        <li>Featured instructor at Summer Drum Camp for aspiring percussionists</li>
+                    <ul> 
+                </td>
+            </tr>
+        </table>
+
+    </div>
     <script>
         document.getElementById('mobile-menu').addEventListener('click', function(){
             var mobileNav = this.querySelector('.mobile.nav');
